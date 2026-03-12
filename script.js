@@ -10,7 +10,7 @@ function calcular(){
     
     let resultadof=0
 
-    if(numerouno=="" || numerodos==""){
+    if(numerouno.value=="" || numerodos.value==""){
         alert ("Digita los dos Números")
         return 
     }  
