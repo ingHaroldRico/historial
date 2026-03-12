@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Historial</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <section class="contenedor">
+        <h1>SuperCalculadora</h1>
+        <p id="resultado" class="resultado">0</p>
+        <input type="number" id="numero1" class="caja1" placeholder="Ingresa un Número" required>
+        <input type="number" id="numero2" class="caja2" placeholder="Ingresa un Número" required>
+        <div class="seleccion">
+            <select id="operacion">
+                <option value="+">Sumar</option>
+                <option value="-">Restar</option>
+                <option value="*">Multiplicar</option>
+                <option value="/">Dividir</option>
+                
+            </select>
+        </div>
+        <button class="btn_calcular" id="btn_calcular">Calcular</button>
+        
+        
+    </section>
+    
+        <section class="historial">
+            <span class="tituloHistorial">Historial</span>
+            <div class="con_hist" id="con_hist">
+
+            </div>
+        </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
