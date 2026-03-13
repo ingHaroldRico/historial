@@ -13,7 +13,7 @@ body{
     flex-wrap: wrap;
 }
 .contenedor{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -91,4 +91,22 @@ select{
     flex-direction: row;
     justify-content: center;
     gap: 5px;
+}
+.limpiar{
+    color: rgb(230, 230, 233);
+    background-color: blue ;
+    padding: 5px;
+    border-radius: 5px;
+    font-width: 9px;
+    font-size: 18px;
+    transition: 0.3s; /* Suaviza el cambio */
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    gap: 30px;
+    
+
 }

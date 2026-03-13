@@ -1,10 +1,12 @@
 let btn=document.getElementById("btn_calcular")
 let resul=document.getElementById("resultado")
 let historial=document.getElementById("con_hist")
+let numerouno=document.getElementById("numero1")
+let numerodos=document.getElementById("numero2")
+let opcion=document.getElementById("operacion")
+let limpiarcajas=document.getElementById("limpiar")
 function calcular(){
-    let numerouno=document.getElementById("numero1")
-    let numerodos=document.getElementById("numero2")
-    let opcion=document.getElementById("operacion")
+    
     let error=false
 
     
@@ -53,7 +55,7 @@ function calcular(){
 
     let op=document.createElement("p")
     op.textContent=opcion.value
-     let r=document.createElement("p")
+    let r=document.createElement("p")
     if (error==false){
     
         r.textContent=resultadof
@@ -79,3 +81,9 @@ function calcular(){
    
 }
 btn.addEventListener("click", calcular)
+function limpiar(){
+    resul.textContent="0"
+    numerouno.value=""
+    numerodos.value=""
+
+}limpiarcajas.addEventListener("click",limpiar)
